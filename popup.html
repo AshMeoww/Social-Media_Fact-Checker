@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Arial, sans-serif; width: 300px; padding: 10px; }
+    .result { padding: 5px; margin: 5px 0; border-radius: 4px; }
+    .True { background-color: #d4edda; }
+    .Misleading { background-color: #f8d7da; }
+    .Inconclusive { background-color: #fff3cd; }
+  </style>
+</head>
+<body>
+  <h3>Auto-Scan Results</h3>
+  <div id="autoResults"></div>
+  <h3>Manual Check</h3>
+  <div id="manualResult"></div>
+  <p><small>Fact-check powered by Hugging Face</small></p>
+  <p><small>Set API key in devtools console:<br>`chrome.storage.local.set({ hfApiKey: "your_token" })`</small></p>
+  <script src="popup.js"></script>
+</body>
+</html>
